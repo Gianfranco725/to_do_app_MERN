@@ -1,0 +1,103 @@
+.home {
+    padding: 28px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 36px 0 64px;
+    margin: 0 auto;
+    max-width: 1111px;
+}
+
+.white-bar {
+    flex-grow: 2;
+    display: block;
+    max-width: 600px;
+    padding: 12px 24px;
+    border-radius: 100px;
+    background-color: #fff;
+}
+
+.search-bar__input {
+    padding-left: 4px;
+    border: none;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+}
+
+.task__container {
+    display: flex;
+    gap: 22px;
+    justify-content: space-between;
+    max-width: 1111px;
+    margin: 0 auto;
+}
+
+.todo,
+.inProcess,
+.done {
+    width: 100%;
+    transition: all 4s;
+}
+
+.todo__titles,
+.inProcess__titles,
+.done__titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 22px;
+}
+
+.todo__title,
+.inProcess__title,
+.done__title {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.todo__add,
+.inProcess__add,
+.done__add {
+    width: 24px;
+    font-size: 18px;
+    padding-bottom: 2px;
+    border: none;
+    border-radius: 2px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    background-color: #d6d6d6;
+    cursor: pointer;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #38a1ff transparent #38a1ff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
